@@ -4,13 +4,13 @@
   "description": "Primeros pasos en NodeJs",
   "main": "index.js",
   "scripts": {
-    "generate-gitbook": "./scripts/losh generate-gitbook",
-    "generate-wiki": "./scripts/losh generate-wiki",
-    "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
-    "deploy-gitbook": "./scripts/losh deploy-gitbook",
-    "deploy-wiki": "./scripts/losh deploy-wiki",
-    "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
-    "version": "./scripts/losh version",
+    "generar-gitbook": "node scripts/gitbook.js",
+    "push-to-gh": "node scripts/gh.js",
+    "gitbook-serve": "cd scripts && node gitbook_serve.js",
+    "deploy-iaas": "cd scripts && node iaas2.js",
+    "deploy-gitbook": "node scripts/deploy_gitbook.js",
+    "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",
+    "deploy": "npm run build && npm run deploy-gitbook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,7 +32,12 @@
     "async": "^1.4.0",
     "fs-extra": "^0.22.1",
     "gh-pages": "^0.3.1",
+    "gitbook": "^2.1.0",
     "gitbook-cli": "^0.3.4",
-    "gitbook": "^2.1.0"
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
