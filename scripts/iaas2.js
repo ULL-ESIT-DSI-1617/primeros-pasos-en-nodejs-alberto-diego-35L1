@@ -12,7 +12,7 @@ var host = require('../package.json').ssh.host;
 var user = require('../package.json').ssh.user;
 var name = require('../package.json').repository.name;
 
-sshexec(`cd Practica2; cd ${name}; git pull; fuser -k 35729/tcp; fuser -k 8080/tcp;  nohup npm run server-express &`, {
+sshexec(`cd Practica2; cd ${name}; git pull; fuser -k 35729/tcp; fuser -k 8080/tcp; npm run generar-gitbook;  nohup npm run server-express &`, {
       user: user,
       host: host,
       key: '~/.ssh/id_rsa.pub'
