@@ -9,7 +9,7 @@ console.log("Prueba default");
 
 
 //conexion ssh hacia el iaas, hacemos pull y levantamos gitbook serve en el puerto 8080
-gulp.task('iaas', 
+gulp.task('iaas',
   // place code for your default task here
 shell.task([
   'npm run deploy-iaas'
@@ -31,7 +31,8 @@ gulp.task('build',
 shell.task([
 'sudo npm install',
 'sudo npm install gitbook-cli',
-'sudo npm run generar-gitbook']));
+'sudo npm run generar-gitbook',
+'sudo npm run generar-wiki']));
 
 //construir el libro en formato website y subirlo a gh-pages y tambien wiki
 gulp.task('deploy',
