@@ -9,6 +9,11 @@ A continuación se procederá a describir el funcionamiento/finalidad de cada sc
 
 Hay que señalar que la configuración de direcciones (ssh, repositorios remotos, etc), se recogen desde el fichero de configuración del proyecto **package.json** alojado en la raíz del directorio.
 
+* **Instalar dependencias de módulos necesarios**
+``
+sudo npm install
+``
+
 * **Push a la rama master remota automáticamente**
 ``
 npm run push-to-gh
