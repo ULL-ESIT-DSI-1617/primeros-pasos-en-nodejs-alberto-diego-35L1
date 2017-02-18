@@ -7,7 +7,7 @@
     "generar-gitbook": "node scripts/gitbook.js",
     "push-to-gh": "node scripts/gh.js",
     "gitbook-serve": "cd scripts && node gitbook_serve.js",
-    "server-express": "node server.js",
+    "server-express": "node scripts/server.js",
     "deploy-iaas": "cd scripts && node iaas2.js",
     "deploy-gitbook": "node scripts/deploy_gitbook.js",
     "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",

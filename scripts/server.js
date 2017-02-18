@@ -1,9 +1,10 @@
 var express = require('express');
+var path = require('path');
 
 // instanciar
 var app = express();
 
-app.use(express.static(__dirname + '/gh-pages')); //ponemos ruta por defecto relativa
+app.use(express.static(path.resolve('gh-pages'))); //ponemos ruta por defecto relativa
 
 
 // escuchar
