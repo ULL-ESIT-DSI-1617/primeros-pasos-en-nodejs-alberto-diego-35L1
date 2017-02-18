@@ -27,6 +27,24 @@ npm run server-express
 ``
 Levanta un servidor web en el puerto 8080. Es necesario construir la website del libro previamente en el directorio gh-pages.
 
+* **Construir website gitbook**
+``
+npm run generar-gitbook
+``
+Genera en el directorio ./gh-pages la website del libro en formato html, css y javascript de forma automática.
+
+* **Construir wiki**
+``
+npm run generar-wiki
+``
+Genera en el directorio ./wiki el libro que se desplegará en la sección wiki del repositorio que indiquemos.
+
+* **Desplegar wiki**
+``
+npm run deploy-wiki
+``
+Despliega la wiki en el repositorio que le indiquemos en el package.json
+
 * **Accesso y despliegue del libro web en máquina remota iaas**
 ``
 gulp iaas
@@ -50,6 +68,7 @@ Instala todas las dependencias necesarias, y construye la website y la wiki del 
 gulp deploy
 ``
 Despliega la website en la rama gh-pages del repositorio remoto, como también la wiki en dicho repositorio.
+
 
 
 
