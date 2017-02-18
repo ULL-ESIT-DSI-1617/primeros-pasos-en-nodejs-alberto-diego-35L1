@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "generar-gitbook": "node scripts/gitbook.js",
+    "generar-wiki": "node scripts/generate-wiki.js",
     "push-to-gh": "node scripts/gh.js",
     "gitbook-serve": "cd scripts && node gitbook_serve.js",
     "server-express": "node scripts/server.js",
     "deploy-iaas": "cd scripts && node iaas2.js",
     "deploy-gitbook": "node scripts/deploy_gitbook.js",
-    "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",
-    "deploy": "npm run build && npm run deploy-gitbook",
+    "deploy-wiki": "node scripts/deploy_wiki.js",
+    "build": "npm install && npm i gitbook-cli && npm run generar-gitbook && npm run generar-wiki",
+    "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-alberto-diego-35L1.git",
+    "wiki": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-alberto-diego-35L1.wiki.git",
     "name": "primeros-pasos-en-nodejs-alberto-diego-35L1"
   },
   "ssh": {
