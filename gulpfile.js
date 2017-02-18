@@ -36,7 +36,8 @@ shell.task([
 //construir el libro en formato website y subirlo a gh-pages y tambien wiki
 gulp.task('deploy',
 shell.task([
-'npm run deploy']));
+'npm run deploy',
+'gulp ghpages']));
 
 
 //subir la website de la carpeta gh-pages a la rama gh-pages del repositorio
