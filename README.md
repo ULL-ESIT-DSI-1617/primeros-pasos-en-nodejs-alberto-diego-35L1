@@ -81,7 +81,9 @@ Despliega la website en la rama gh-pages del repositorio remoto, como también l
 
 * [Enlace al repositorio Github](https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-alberto-diego-35L1)
 * [Enlace a la publicación en gh-pages](https://ull-esit-dsi-1617.github.io/primeros-pasos-en-nodejs-alberto-diego-35L1/)
-* [Enlace a la publicación en máquina iaas en Gitbook](http://10.6.129.237:8080/)
+
+* [Enlace a la publicación en máquina iaas en Gitbook Alberto](http://10.6.129.237:8080/)
+* [Enlace a la publicación en máquina iaas en Gitbook](http://10.6.128.78:8080/)
 
 * [Pagina web asignatura](https://campusvirtual.ull.es/1617/course/view.php?id=1136)
 * [Enunciado de la practica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicatareasiniciales2.html)
